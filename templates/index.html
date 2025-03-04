@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}Home | Stock Analysis Platform{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="jumbotron text-center p-4 bg-light rounded">
+            <h1 class="display-4">Stock Analysis & Prediction Platform</h1>
+            <p class="lead">Comprehensive analytics for 500 trending stocks</p>
+            <hr class="my-4">
+            <p>Analyze earnings trends, price action, support/resistance levels, and market cap data.</p>
+            <div class="mt-4">
+                <a href="{{ url_for('trending') }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-fire"></i> View Trending Stocks
+                </a>
+                <a href="{{ url_for('stocks') }}" class="btn btn-secondary btn-lg ms-2">
+                    <i class="fas fa-list"></i> Browse All Stocks
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                <h5 class="card-title">Technical Analysis</h5>
+                <p class="card-text">Access support and resistance levels, moving averages, and trend indicators for any stock.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-file-invoice-dollar fa-3x text-success mb-3"></i>
+                <h5 class="card-title">Earnings Analysis</h5>
+                <p class="card-text">Track earnings surprises and analyze typical price movements after earnings reports.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-bolt fa-3x text-warning mb-3"></i>
+                <h5 class="card-title">Trend Scores</h5>
+                <p class="card-text">Discover stocks with momentum based on our proprietary scoring system.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4>Getting Started</h4>
+            </div>
+            <div class="card-body">
+                <p>Follow these steps to make the most of our platform:</p>
+                <ol>
+                    <li>Browse <a href="{{ url_for('trending') }}">trending stocks</a> to see which securities are gaining momentum</li>
+                    <li>Click on any stock to view its detailed analysis, including support/resistance levels and earnings data</li>
+                    <li>Analyze price action after earnings to identify patterns</li>
+                    <li>Use trend scores to discover potential investment opportunities</li>
+                </ol>
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> Our data is updated daily during market hours to ensure you have the latest information.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

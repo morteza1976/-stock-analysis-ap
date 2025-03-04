@@ -1,0 +1,113 @@
+/* Custom styles for Stock Analysis Platform */
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header and navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-weight: 600;
+    background-color: #f1f5f9;
+}
+
+/* Stock details page */
+.stock-header {
+    background: linear-gradient(135deg, #1a237e, #283593);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.stock-price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.price-up {
+    color: #4caf50;
+}
+
+.price-down {
+    color: #f44336;
+}
+
+.price-unchanged {
+    color: #9e9e9e;
+}
+
+/* Chart containers */
+.chart-container {
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+/* Data tables */
+.data-table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+.data-table tr:hover {
+    background-color: #f1f8ff;
+}
+
+/* Support and resistance indicators */
+.support-line {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.resistance-line {
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* Trending page */
+.trend-score-bar {
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    background-color: #e0e0e0;
+}
+
+.trend-score-indicator {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(to right, #81c784, #4caf50, #2e7d32);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+    
+    .stock-header {
+        padding: 1.5rem;
+    }
+    
+    .chart-container {
+        height: 300px;
+    }
+} 
